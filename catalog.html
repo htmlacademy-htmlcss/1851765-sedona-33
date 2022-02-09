@@ -112,29 +112,33 @@
                     </li>
                 </ul>
             </fieldset>
+            <div class="filter-buttons-container">
               <button class="button button-apply" type="submit">Применить</button>
               <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
       </section>
       <section class="sorting">
         <div class="inner-container">
-          <label class="sorting-title">Найдено гостиниц:<span class="sorting-quantity">38</span></h2>
+          <label class="sorting-title">Найдено гостиниц:<span class="sorting-quantity">38</span>
             <select class="select-control">
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="popular">Сначала популярное</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
         </label>
-        <a href="#" class="button button-active">
+        <div class="container-button-show">
+          <a href="#" class="button-show button-active">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-show" href="#">
             <span class="visually-hidden">Показать карточку полностью</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-show" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
+        </div>
         </div>
       </section>
       <section class="products">
@@ -205,16 +209,16 @@
                 </div>
               </li>
         </ul>
-        <button class="button pagination-show-more" type="button">ЗАГРУЗИТЬ ЕЩЁ</button>
+        <button class="button show-more" type="button">ЗАГРУЗИТЬ ЕЩЁ</button>
         </div>
       </section>
       <section class="pagination inner-container">
           <ol class="pagination-list">
             <li class="pagination-item">
-              <a class="button pagination-link pagination-current">1</a>
+              <a class="button pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
-              <a class="button pagination-link">2</a>
+              <a class="button pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
               <a class="button pagination-link" href="#">3</a>
@@ -240,7 +244,7 @@
       <section class="subscribe-catalog">
           <h2 class="visually-hidden">Подписаться</h2>
           <h3 class="subscribe-catalog-title">Подпишитесь на рассылку</h3>
-          <p class="subscribe-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-catalog-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" id="subscribe-date" name="subscribe-date" placeholder="Ваш e-mail">
             <button class="button button-submit" type="submit">Подписаться</button>
@@ -251,7 +255,7 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-social">
-          <h2 class="visiually-hidden">Мы в социальных сетях</h2>
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-pic" href="#">
@@ -271,11 +275,11 @@
           </ul>
         </section>
         <section class="footer-tel">
-          <h2 class="visiually-hidden">Номер телефона</h2>
+          <h2 class="visually-hidden">Номер телефона</h2>
           <a class="footer-tel-link" href="tel:+78128121212"><span class="footer-tel-text">+7 (812) 812-12-12</span></a>
         </section>
         <section class="footer-about">
-          <h2 class="visiually-hidden">Ссылка на автора</h2>
+          <h2 class="visually-hidden">Ссылка на автора</h2>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="footer-about-pic" src="images/logo_htmlacademy.svg" width="115" height="34" alt="логотип HTML Academy"></a>
         </section>
       </div>
