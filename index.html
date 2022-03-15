@@ -113,7 +113,8 @@
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" type="email" id="subscribe-date" name="subscribe-date" placeholder="Ваш e-mail">
+            <label for="subscribe"></label>
+            <input class="subscribe-input" type="email" id="subscribe" name="subscribe" placeholder="Ваш e-mail">
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
@@ -189,5 +190,36 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="field-group-item" for="arrival-date">Дата заезда:</label>
+              <input class="search-form-field field" type="text" id="arrival-date" value="27 апреля 2020" min="2022-03-20" name="Дата заезда">
+            </p>
+            <p class="field-group">
+              <label class="field-group-item" for="departure-date">Дата выезда:</label>
+              <input class="search-form-field field" type="text" id="departure-date" value="1 сентября 2021" min="2022-03-21" name="Дата выезда">
+            </p>
+            <div class="field-group-peoples">
+              <label class="field-group-adults" for="adults">Взрослые:</label><input class="field-peoples field"  type="text" value="2" id="adults" name="Количество взрослых">
+              <label class="field-group-childrens" for="childrens">Дети:</label>
+              <span class="info-popover"></span>
+              <div class="popover popover-close">
+                <span class="triangle"></span>
+                <p class="popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
+              <input class="field-childrens field" type="text" value="2" id="childrens" name="Количество детей">
+            </div>
+            <button class="search-form-button" type="submit">найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
