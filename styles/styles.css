@@ -1251,7 +1251,7 @@
 } */
 .popover{
     position: absolute;
-    top: 385px;
+    top: 390px;
     left: 345px;
     z-index: 3;
     width: 256px;
@@ -1271,7 +1271,7 @@
 .info-popover{
     display: inline-block;
     position: absolute;
-    top: 347px;
+    top: 355px;
     left: 460px;
     width: 25px;
     height: 25px;
@@ -1292,4 +1292,15 @@
     background-image: url(../images/Vectortriangle.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+.field:hover{
+    background-color: #E6E6E6;
+}
+.field:focus{
+    outline:  3px solid #83B3D3;
+    outline-offset: -3px;
+}
+.field:invalid{
+    outline: 3px solid #FF5757;
+    outline-offset: -3px;
 }
