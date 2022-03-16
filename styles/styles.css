@@ -796,7 +796,7 @@
     background-image: url(../images/arrowDown.svg);
     background-repeat: no-repeat;
     background-position: right 20px center;
-    appearance: textfield;
+    appearance: none;
 }
 .select-control::-webkit-outer-spin-button,
 .select-control::-webkit-inner-spin-button{
@@ -804,13 +804,15 @@
     margin: 0;
 }
 .select-control:hover{
-    border-color: #83B3D3;
+    outline: 2px solid #83B3D3;
 }
 .select-control:focus{
-    border-color: #83B3D3;
+    outline: 2px solid #83B3D3;
 }
 .select-control:active{
-    border-color:#E6E6E6;
+    outline: 2px solid#E6E6E6;
+    opacity: 0.3;
+    color: #333;
 }
 .breadcrumbs-list{
     display: flex;
@@ -1134,6 +1136,8 @@
 }
 .pagination-quantity-control:active{
     border-color:#E6E6E6;
+    opacity: 0.3;
+    color: #333;
 }
 .subscribe-catalog{
     text-align: center;
