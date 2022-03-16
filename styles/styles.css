@@ -1330,7 +1330,6 @@
     top: 0;
     left: 100px;
   }
-
 .tooltip-toggle {
   border: none;
   background-color: #83B3D3;
@@ -1369,7 +1368,7 @@
     z-index: 5;
     display: none;
   }
-  .tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
