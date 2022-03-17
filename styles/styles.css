@@ -1057,15 +1057,32 @@ html {
 }
 
 .button-card-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  background-color: transparent;
   box-sizing: border-box;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
+  outline-offset: -2px;
   border-radius: 4px;
+}
+
+.button-toggle-tile{
+  background-image: url("../images/modetile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-toggle-slide{
+  background-image: url("../images/modeslideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-toggle-list{
+  background-image: url("../images/modelist.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-card-toggle:last-child {
@@ -1074,14 +1091,17 @@ html {
 
 .button-card-toggle:hover {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
 }
 
 .button-card-toggle:focus {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
 }
 
 .button-card-toggle:active {
   outline: 2px solid #000000;
+  outline-offset: -2px;
 }
 
 .button-card-current {
