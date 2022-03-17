@@ -34,11 +34,11 @@
   .button{
       color: #fff;
       background-color: #756257;
-      font-family: inherit;
       border:none;
       text-decoration: none;
       cursor: pointer;
       font-family: "PT Sans", sans-serif;
+      font-weight: 700;
   }
   .main-container{
       flex-grow: 1;
@@ -579,21 +579,14 @@
 }
 .filter-price-title{
     margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
 }
 .control{
     position: relative;
     display: block;
     padding-left: 36px;
-}
-.control:hover .control-mark{
-    background-color: rgba(255, 255, 255, 0.6);
-}
-.control:focus .control-mark{
-    background-color: rgba(255, 255, 255, 0.6);
-    outline: 3px solid #83B3D3;
-}
-.control:active .control-mark{
-    background-color: rgba(255, 255, 255, 0.3);
 }
 .control-mark{
     position: absolute;
@@ -603,6 +596,19 @@
     background-color: #fff;
     top: 0px;
     left: 0px;
+}
+.control:hover .control-mark{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.control-input[type="checkbox"]:focus + .control-mark{
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: 3px solid #83B3D3;
+}
+.control-input[type="radio"]:focus +.control-mark-radio{
+    outline: 3px solid #83B3D3;
+}
+.control:active .control-mark{
+    background-color: rgba(255, 255, 255, 0.3);
 }
 .control-mark-radio{
     position: absolute;
@@ -748,7 +754,8 @@
     width: 160px;
     background-color: transparent;
     font-size: 18px;
-    line-height: 23px
+    line-height: 23px;
+    font-weight: 400;
 }
 .button-reset:hover{
     color:rgba(255, 255, 255, 0.6);
@@ -1087,6 +1094,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 23px;
 }
 .pagination-link{
     display: flex;
