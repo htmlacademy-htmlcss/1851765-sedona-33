@@ -141,23 +141,24 @@
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
-        <label class="sorting-container">
+        <label class="sorting-label" for="sorting"></label>
+        <div class="sorting-container">
           <p class="sorting-title">Найдено гостиниц:<span class="sorting-quantity">38</span></p>
-          <select class="select-control" aria-label="Сортировка">
+          <select class="select-control" id="sorting" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-        </label>
+        </div>
         <div class="container-card-toggle">
-          <a class="button-card-toggle button-card-current" href="#">
-            <img class="card-toggle-img" src="images/modetile.svg" width="16" height="14" alt="Показать плиткой.">
+          <a class="button-card-toggle button-toggle-tile button-toggle-current" href="#">
+            <span class="visually-hidden">Показать таблицей.</span>
           </a>
-          <a class="button-card-toggle" href="#">
-            <img class="card-toggle-img" src="images/modeslideshow.svg" width="16" height="14" alt="Показать слайдом.">
+          <a class="button-card-toggle button-toggle-slide" href="#">
+            <span class="visually-hidden">Показать слайдами.</span>
           </a>
-          <a class="button-card-toggle" href="#">
-            <img class="card-toggle-img" src="images/modelist.svg" width="16" height="14" alt="Показать списком.">
+          <a class="button-card-toggle button-toggle-list" href="#">
+            <span class="visually-hidden">Показать списком.</span>
           </a>
         </div>
       </section>
