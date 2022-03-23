@@ -42,7 +42,8 @@ html {
 }
 
 .button:disabled {
-  opacity: 0.3;
+  opacity: 0.6;
+  cursor: no-drop;
 }
 
 .main-container {
@@ -483,6 +484,7 @@ html {
   border: none;
   background-color: #6ca6d6;
   opacity: 0.3;
+  cursor: no-drop;
 }
 
 .button-subscribe {
